@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veranstaltungen | Kultur bei Racha & Roger</title>
+  <meta name="description" content="Billard, Stammtische, Open Stage, Kunstausstellung, Karaoke-Abende und ein Raum für private Veranstaltungen – entdecken Sie, was bei Kultur bei Racha & Roger sonst noch los ist.">
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Eigene Stylesheet-Datei -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Spezifische Styles nur für die Veranstaltungen-Seite */
+    .events-hero {
+      padding-top: 8rem;
+      padding-bottom: 2rem;
+    }
+    .events-intro {
+      max-width: 65ch;
+      margin: 0 auto;
+      text-align: center;
+      font-family: var(--font-elegant);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--color-green);
+    }
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .event-card {
+      background: var(--color-white);
+      border: 1px solid rgba(192, 160, 98, 0.25);
+      border-radius: var(--radius);
+      padding: 2.4rem 2rem;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .event-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-soft);
+    }
+    .event-card .icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .event-card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
+    .event-card p { font-size: 0.9rem; opacity: 0.85; }
+    .event-card .event-tag {
+      display: inline-block;
+      margin-top: 0.9rem;
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      background: rgba(192, 160, 98, 0.12);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    .events-cta {
+      background: var(--color-green-dark);
+      color: var(--color-cream);
+      border-radius: var(--radius);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .events-cta h2 { color: var(--color-white); margin-bottom: 1rem; }
+    .events-cta p {
+      max-width: 55ch;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body class="no-hero">
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Kultur bei Racha &amp; Roger</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="veranstaltungen.html" class="active">Veranstaltungen</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HEADER BEREICH -->
+    <section class="section events-hero">
+      <div class="container">
+        <p class="eyebrow center">Mehr als nur Essen</p>
+        <h1 class="section-title center">Veranstaltungen</h1>
+        <p class="events-intro">Bei Kultur bei Racha &amp; Roger ist immer etwas los. Ob Billard, Live-Musik, Kunst oder Karaokeabende – hier trifft sich unsere Gemeinschaft und feiert das Leben.</p>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- ANGEBOTE -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow center">Was bei uns geboten wird</p>
+        <h2 class="section-title center">Unsere Highlights</h2>
+
+        <div class="events-grid">
+
+          <article class="event-card">
+            <div class="icon">🎱</div>
+            <h3>Billardtisch</h3>
+            <p>Ob mit Freunden oder allein auf ein Spiel vorbeigekommen – unser Billardtisch steht für eine entspannte Partie bereit.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🍵</div>
+            <h3>Stammtische</h3>
+            <p>Verschiedene Stammtische, darunter unser beliebter Netzwerkstammtisch, treffen sich regelmäßig bei uns. Sie können Ihren eigenen Stammtisch buchen.</p>
+            <span class="event-tag">Buchbar</span>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🎤</div>
+            <h3>Open Stage</h3>
+            <p>Jeden Donnerstag ab 18:00 Uhr laden wir zur Open Stage ein – mit verschiedenen Instrumenten vor Ort für alle, die Lust haben, aufzutreten.</p>
+            <span class="event-tag">Jeden Donnerstag, 18:00 Uhr</span>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🏛️</div>
+            <h3>Raum für private Veranstaltungen</h3>
+            <p>Sie planen eine private Feier oder ein Treffen? Bei uns können Sie einen eigenen Raum mieten – ganz nach Ihren Wünschen.</p>
+            <span class="event-tag">Mietbar</span>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🧸</div>
+            <h3>Kinderecke</h3>
+            <p>Für unsere kleinsten Gäste gibt es eine gemütliche Kinderecke, in der sich Kinder austoben können, während die Eltern entspannen.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🎨</div>
+            <h3>Kunstausstellung</h3>
+            <p>Bei uns hängt stets eine wechselnde Kunstausstellung, die Besucher in gemütlicher Atmosphäre entdecken können.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🎶</div>
+            <h3>Karaoke-Abende</h3>
+            <p>An ausgewählten Terminen verwandeln wir unser Restaurant in eine Karaoke-Bühne – für einen unvergesslichen, musikalischen Abend.</p>
+            <span class="event-tag">An ausgewählten Terminen</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- KONTAKT-CTA -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="events-cta">
+          <h2 class="section-title">Fragen oder Buchung?</h2>
+          <p>Ob Stammtisch, Raum-Anfrage oder Frage zu unseren nächsten Terminen – kontaktieren Sie uns einfach.</p>
+          <a href="index.html#kontakt" class="btn btn-gold">Zum Kontakt</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-logo">Kultur bei Racha &amp; Roger</h3>
+        <p>Orientalische Gastfreundschaft, hausgemachte Spezialitäten und gemütliche Atmosphäre – Restaurant, Café und Imbiss unter einem Dach.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Straße der Einheit 24<br>14806 Bad Belzig<br>033841 474786<br>kultur.bei.racha.roger@gmail.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Öffnungszeiten</h4>
+        <p>Mo-Do: 9:00–20:00<br>Fr–Sa: 9:00–22:00<br>So: 11:00–20:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <p>	<a href="impressum.html">Impressum</a><br>
+		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <div class="social-links">
+  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+	</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Kultur bei Racha &amp; Roger. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       LIGHTBOX (für Galerie-Bilder)
+  ==================================================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+

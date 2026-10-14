@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speisekarte | Kultur bei Racha & Roger</title>
+  <meta name="description" content="Unsere Speisekarte: Frühstück, orientalische Vorspeisen, Wraps, Bowls, Tellergerichte und ausgewählte Getränke.">
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Eigene Stylesheet-Datei -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Spezifische Styles für das Menü-Layout */
+    .menu-section {
+      padding: 3rem 0;
+    }
+    .menu-category-title {
+      font-size: 1.8rem;
+      color: var(--color-green);
+      border-bottom: 2px solid var(--color-gold);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+      margin-top: 2rem;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-item {
+      background: var(--color-white);
+      padding: 1.2rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(198, 161, 91, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .menu-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    .menu-item-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--color-green);
+    }
+    .menu-item-price {
+      font-family: var(--font-ui);
+      font-weight: 700;
+      color: var(--color-gold);
+      font-size: 1.05rem;
+      white-space: nowrap;
+    }
+    .menu-item-desc {
+      font-size: 0.88rem;
+      color: var(--color-brown);
+      opacity: 0.85;
+    }
+    .menu-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      margin-left: 0.4rem;
+    }
+    .badge-vegan { background: #e8f5e9; color: #2e7d32; }
+    .badge-veg { background: #fff8e1; color: #f57f17; }
+    .sub-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--color-brown);
+      margin-top: -1rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body class="no-hero">
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Kultur bei Racha &amp; Roger</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="speisekarte.html" class="active">Speisekarte</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top: 5rem;">
+
+    <!-- HEADER BEREICH -->
+    <section class="section center" style="padding-bottom: 2rem;">
+      <div class="container">
+        <p class="eyebrow center">Frisch &amp; Hausgemacht</p>
+        <h1 class="section-title">Unsere Speisekarte</h1>
+        <p class="hero-text" style="color: var(--color-brown);">Genießen Sie orientalische Spezialitäten und erlesene Getränke.</p>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- SPEISEN BEREICH -->
+<section class="menu-section">
+  <div class="container">
+    
+    <!-- FRÜHSTÜCK -->
+    <h2 class="menu-category-title">Frühstück</h2>
+    <p class="sub-note">Jeden Tag von 8:00 bis 10:30 Uhr</p>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Gekochte Eier <span class="menu-badge badge-veg">V</span></span>
+          <span class="menu-item-price">5,00 €</span>
+        </div>
+        <p class="menu-item-desc">Toast, Mayonnaise, frischer Salat</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Spiegeleier <span class="menu-badge badge-veg">V</span></span>
+          <span class="menu-item-price">6,00 €</span>
+        </div>
+        <p class="menu-item-desc">2 Eier, Toast, frischer Salat</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Sujuk-Spiegeleier</span>
+          <span class="menu-item-price">6,50 €</span>
+        </div>
+        <p class="menu-item-desc">2 Eier, Toast, Sujuk, frischer Salat</p>
+      </div>
+    </div>
+
+
+    <!-- FATAYER -->
+    <h2 class="menu-category-title">Fatayer</h2>
+    <p class="sub-note">Belegte Teigfladen</p>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-header">
+	<span class="menu-item-title">Zaatar <span class="menu-badge badge-vegan">Vegan</span></span>
+        <span class="menu-item-price">4,80 €</span>
+        </div>
+        <p class="menu-item-desc">Thymian, Olivenöl, Sesam, Gewürze</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Extra Zaatar <span class="menu-badge badge-veg">V</span></span>
+          <span class="menu-item-price">5,50 €</span>
+        </div>
+        <p class="menu-item-desc">Zaatar, Mozzarella</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Käse <span class="menu-badge badge-veg">V</span></span>
+          <span class="menu-item-price">5,50 €</span>
+        </div>
+        <p class="menu-item-desc">Gemischter Käse, Petersilie, Gewürze</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Mhamara <span class="menu-badge badge-veg">V</span></span>
+          <span class="menu-item-price">5,50 €</span>
+        </div>
+        <p class="menu-item-desc">Paprikapaste, Mozzarella</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span class="menu-item-title">Salami mit Käse</span>
+          <span class="menu-item-price">5,80 €</span>
+        </div>
+        <p class="menu-item-desc">Rindersalami, Mozzarella</p>
+      </div>
+    </div>
+
+        <!-- VORSPEISEN -->
+        <h2 class="menu-category-title">Vorspeisen</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Salat / Fattoush <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Gemischter frischer Salat, Granatapfelsoße, Granatapfel, knuspriges Brot</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Salat / Taboule <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Petersilie, Tomaten, Zwiebeln, Bulgur</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Hummus <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Kichererbsen-Creme, Sesamsoße</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+	      <span class="menu-item-title">Mutabal <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Gegrillte Auberginen, Sesamsoße</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Babaghanouj <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Gegrillte Auberginen, Paprika, Tomaten</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Pommes frites<span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">4,50 €</span>
+            </div>
+            <p class="menu-item-desc">Klassisch gewürzt</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Mhamara<span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Paprika, Bulgur, Walnüsse, Gewürze, Granatapfelsoße</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Yalanji <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">5,00 €</span>
+            </div>
+            <p class="menu-item-desc">Gefüllte Weinblätter, Reis, Gemüse (5 Stk.)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Kibbeh</span>
+              <span class="menu-item-price">6,00 €</span>
+            </div>
+            <p class="menu-item-desc">Bulgurbällchen, Hackfleisch, Zwiebeln, Gewürze (3 Stk.)</p>
+          </div>
+        </div>
+
+        <!-- TORTILLA WRAPS -->
+        <h2 class="menu-category-title">Tortilla Wraps</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Falafel <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Falafel, Hummus, Tomaten, saure Gurken, Sesamsoße</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Kebab</span>
+              <span class="menu-item-price">8,00 €</span>
+            </div>
+            <p class="menu-item-desc">Rindfleisch, Paprikapaste, Zwiebeln, Petersilie, Granatapfelsoße, saure Gurken</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Fajita</span>
+              <span class="menu-item-price">8,00 €</span>
+            </div>
+            <p class="menu-item-desc">Gebratenes Hähnchen, Paprika, Mais, Gouda-Käse, Mayonnaise, saure Gurken</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Halloumi <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">7,00 €</span>
+            </div>
+            <p class="menu-item-desc">Gebratener Halloumi, Salat, Granatapfelsoße</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Käse und Salami</span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Gouda-Käse, Salami</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Extra Käse <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Thymian, Olivenöl, Gouda-Käse, Tomaten</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Mhamara mit Käse <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Paprikapaste, Gouda-Käse, Sesam, Schwarzkümmel</p>
+          </div>
+        </div>
+
+        <!-- BOWLS -->
+        <h2 class="menu-category-title">Bowls</h2>
+        <p class="sub-note">Frischer gemischter Salat mit einer Beilage nach Ihrer Wahl</p>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Falafel Bowl <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">12,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Kebab Bowl</span>
+              <span class="menu-item-price">14,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Hähnchen Bowl</span>
+              <span class="menu-item-price">14,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Halloumi Bowl <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">12,00 €</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TELLER -->
+        <h2 class="menu-category-title">Tellergerichte</h2>
+        <p class="sub-note">Hummus, Brot, Tomaten, saure Gurken mit einer Beilage nach Ihrer Wahl</p>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Falafel Teller <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">14,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Kebab Teller</span>
+              <span class="menu-item-price">16,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Hähnchen Teller</span>
+              <span class="menu-item-price">16,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Halloumi Teller <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">14,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Kids Teller</span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">6 Stk. Chicken Nuggets mit Pommes</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- GETRÄNKE BEREICH -->
+    <section class="menu-section">
+      <div class="container">
+        <p class="eyebrow center">Erfrischung &amp; Genuss</p>
+        <h1 class="section-title center">Getränke</h1>
+
+        <!-- WARME GETRÄNKE -->
+        <h2 class="menu-category-title">Warme Getränke</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Espresso</span>
+              <span class="menu-item-price">2,80 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Doppelter Espresso</span>
+              <span class="menu-item-price">3,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Klassischer Kaffee</span>
+              <span class="menu-item-price">3,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Americano</span>
+              <span class="menu-item-price">3,30 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Cappuccino</span>
+              <span class="menu-item-price">3,60 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Latte Macchiato</span>
+              <span class="menu-item-price">3,60 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Caffè Latte</span>
+              <span class="menu-item-price">3,60 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Caffè Crema</span>
+              <span class="menu-item-price">3,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Heiße Schokolade</span>
+              <span class="menu-item-price">3,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Tee (mit / ohne Kardamom)</span>
+              <span class="menu-item-price">2,80 €</span>
+            </div>
+            <p class="menu-item-desc">Schwarz, Grün, Kräuter, Minze</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Arabischer Kaffee</span>
+              <span class="menu-item-price">4,20 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Sahlab</span>
+              <span class="menu-item-price">4,50 €</span>
+            </div>
+            <p class="menu-item-desc">Milchgetränk mit Orchideenwurzelpulver und Zimt</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Mate Tee</span>
+              <span class="menu-item-price">4,50 €</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- APERITIFS -->
+        <h2 class="menu-category-title">Aperitifs</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Sekt Piccolo (0,1l)</span>
+              <span class="menu-item-price">3,60 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Aperol Spritz (0,3l)</span>
+              <span class="menu-item-price">5,80 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Campari Spritz (0,3l)</span>
+              <span class="menu-item-price">5,80 €</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BIER & WEIN -->
+        <h2 class="menu-category-title">Bier &amp; Wein</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Fassbier | Fläminger Pilsner</span>
+              <span class="menu-item-price">0,3l - 3,80 € | 0,5l - 5,20 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Fassbier | Fläminger Hell</span>
+              <span class="menu-item-price">0,3l - 3,80 € | 0,5l - 5,20 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Paulaner Hefeweizen</span>
+              <span class="menu-item-price">0,5l - 4,80 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Radler</span>
+              <span class="menu-item-price">0,3l - 3,50 € | 0,5l - 4,80 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Alkoholfrei | Pilsner / Radler</span>
+              <span class="menu-item-price">0,33l - 3,50 € / 4,50 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Rotwein (0,2l)</span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Trocken / Halbtrocken / Süß</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Weißwein (0,2l)</span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Trocken / Halbtrocken / Süß</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Roséwein (0,2l)</span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+          </div>
+        </div>
+
+<!-- BUBBLE TEA -->
+        <h2 class="menu-category-title">Bubble Tea</h2>
+        <p class="sub-note">Verschiedene tolle Sorten von Bubbles und Eistee (auch mit Milch oder Hafermilch verfügbar +0,50 €)</p>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bubble Tea (0,3l)</span>
+              <span class="menu-item-price">4,00 €</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bubble Tea (0,5l)</span>
+              <span class="menu-item-price">5,00 €</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-logo">Kultur bei Racha &amp; Roger</h3>
+        <p>Orientalische Gastfreundschaft, hausgemachte Spezialitäten und gemütliche Atmosphäre – Restaurant, Café und Imbiss unter einem Dach.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Straße der Einheit 24<br>14806 Bad Belzig<br>033841 474786<br>kultur.bei.racha.roger@gmail.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Öffnungszeiten</h4>
+        <p>Mo-Do: 9:00–20:00<br>Fr–Sa: 9:00–22:00<br>So: 11:00–20:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <p>	<a href="impressum.html">Impressum</a><br>
+		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <div class="social-links">
+  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+	</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Kultur bei Racha &amp; Roger. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       LIGHTBOX (für Galerie-Bilder)
+  ==================================================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

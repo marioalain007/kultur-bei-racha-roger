@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service &amp; Catering | Kultur bei Racha & Roger</title>
+  <meta name="description" content="Catering von Kultur bei Racha & Roger: orientalische Spezialitäten für Ihre Feier, Firmenevents oder private Anlässe. Jetzt per E-Mail anfragen.">
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Eigene Stylesheet-Datei -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Spezifische Styles nur für die Service-Seite */
+    .service-hero {
+      padding-top: 8rem;
+      padding-bottom: 2rem;
+    }
+    .service-intro {
+      max-width: 65ch;
+      margin: 0 auto;
+      text-align: center;
+      font-family: var(--font-elegant);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--color-green);
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .service-card {
+      background: var(--color-white);
+      border: 1px solid rgba(192, 160, 98, 0.25);
+      border-radius: var(--radius);
+      padding: 2.4rem 2rem;
+      text-align: center;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-soft);
+    }
+    .service-card .icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .service-card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
+    .service-card p { font-size: 0.9rem; opacity: 0.85; }
+
+    .catering-cta {
+      background: var(--color-green-dark);
+      color: var(--color-cream);
+      border-radius: var(--radius);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .catering-cta h2 { color: var(--color-white); margin-bottom: 1rem; }
+    .catering-cta p {
+      max-width: 55ch;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+    .catering-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 780px;
+      margin: 0 auto 2.5rem;
+      text-align: left;
+    }
+    .catering-step {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(192, 160, 98, 0.3);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem 1.4rem;
+    }
+    .catering-step span {
+      display: inline-block;
+      font-family: var(--font-display);
+      color: var(--color-gold-light);
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+    .catering-step p { font-size: 0.85rem; opacity: 0.85; }
+  </style>
+</head>
+<body class="no-hero">
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Kultur bei Racha &amp; Roger</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="service.html" class="active">Service</a></li>
+          <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HEADER BEREICH -->
+    <section class="section service-hero">
+      <div class="container">
+        <p class="eyebrow center">Für Ihre besonderen Anlässe</p>
+        <h1 class="section-title center">Catering &amp; Service</h1>
+        <p class="service-intro">Ob Familienfeier, Firmenevent oder private Feier – wir bringen die Aromen des Orients direkt zu Ihnen. Mit Liebe zubereitet, frisch serviert und ganz nach Ihren Wünschen zusammengestellt.</p>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- LEISTUNGEN -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow center">Was wir anbieten</p>
+        <h2 class="section-title center">Unser Catering-Angebot</h2>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">🎉</div>
+            <h3>Private Feiern</h3>
+            <p>Geburtstage, Jubiläen oder Familienfeste – wir versorgen Ihre Gäste mit orientalischen Köstlichkeiten.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">💼</div>
+            <h3>Firmenevents</h3>
+            <p>Von kleinen Meetings bis zu großen Firmenfeiern – hochwertiges Catering für Ihr Business.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🍢</div>
+            <h3>Buffets &amp; Platten</h3>
+            <p>Vielfältige Auswahl an Vorspeisen, Grillgerichten und Süßspeisen – individuell zusammengestellt.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- CATERING-ANFRAGE -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="catering-cta">
+          <h2 class="section-title">Jetzt Catering anfragen</h2>
+          <p>Erzählen Sie uns von Ihrem Anlass – wir erstellen Ihnen gerne ein passendes, unverbindliches Angebot.</p>
+
+          <div class="catering-steps">
+            <div class="catering-step">
+              <span>1</span>
+              <p>Schreiben Sie uns eine E-Mail mit Datum, Personenzahl und Ihren Wünschen.</p>
+            </div>
+            <div class="catering-step">
+              <span>2</span>
+              <p>Wir melden uns bei Ihnen mit einem individuellen Vorschlag.</p>
+            </div>
+            <div class="catering-step">
+              <span>3</span>
+              <p>Gemeinsam stimmen wir alle Details für Ihren Anlass ab.</p>
+            </div>
+          </div>
+
+ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kultur.bei.racha.roger@gmail.com&su=Catering-Anfrage&body=Hallo%20Kultur%20bei%20Racha%20%26%20Roger%20Team%2C%0A%0Aich%20interessiere%20mich%20für%20Ihr%20Catering-Angebot.%0A%0ADatum%20der%20Veranstaltung:%20%0AAnzahl%20der%20Personen:%20%0AOrt:%20%0AWeitere%20Wünsche:%20%0A%0AVielen%20Dank%20und%20viele%20Grüße," 
+   target="_blank" 
+   class="btn btn-gold">
+  Catering-Anfrage per E-Mail senden
+</a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-logo">Kultur bei Racha &amp; Roger</h3>
+        <p>Orientalische Gastfreundschaft, hausgemachte Spezialitäten und gemütliche Atmosphäre – Restaurant, Café und Imbiss unter einem Dach.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Straße der Einheit 24<br>14806 Bad Belzig<br>033841 474786<br>kultur.bei.racha.roger@gmail.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Öffnungszeiten</h4>
+        <p>Mo-Do: 9:00–20:00<br>Fr–Sa: 9:00–22:00<br>So: 11:00–20:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <p>	<a href="impressum.html">Impressum</a><br>
+		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <div class="social-links">
+  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+	</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Kultur bei Racha &amp; Roger. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       LIGHTBOX (für Galerie-Bilder)
+  ==================================================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

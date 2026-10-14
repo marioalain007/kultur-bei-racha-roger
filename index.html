@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===================================================
+       SEO – Titel & Beschreibung
+       WICHTIG: Diese Texte erscheinen bei Google in der Suche.
+       Passe sie an, sobald du deine echten Infos hast.
+  ==================================================== -->
+  <title>Kultur bei Racha & Roger | Restaurant · Café · Bar</title>
+  <meta name="description" content="Kultur bei Racha & Roger – orientalische Gastfreundschaft, hausgemachte Spezialitäten und gemütliche Atmosphäre. Restaurant, Café und Bar unter einem Dach.">
+
+  <!-- Open Graph (für schöne Vorschau bei WhatsApp/Facebook-Links) -->
+  <meta property="og:title" content="Kultur bei Racha & Roger">
+  <meta property="og:description" content="Orientalische Gastfreundschaft trifft auf hausgemachte Spezialitäten und gemütliche Atmosphäre.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts: Cinzel & Cormorant Garamond (Überschriften), Poppins & Lato (Text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Eigenes Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================
+       NAVIGATION
+       Bleibt oben fest ("sticky") und wechselt beim Scrollen
+       von transparent zu dunkelgrün (siehe script.js)
+  ==================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Kultur bei Racha &amp; Roger</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Startseite</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================================================
+         1. HERO BEREICH
+    ==================================================== -->
+    <section class="hero" id="hero">
+      <!-- PLATZHALTERBILD: Ersetze im CSS (.hero) den Bildpfad
+           durch dein eigenes Foto, z. B. images/hero.jpg -->
+      <div class="hero-bg" style="background-image: url('images/racharoger.jpg');"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content" data-animate="fade-up">
+        <p class="eyebrow">Restaurant &bull; Café &bull; Bar</p>
+        <h1>Kultur bei Racha &amp; Roger</h1>
+        <p class="hero-text">Orientalische Gastfreundschaft trifft auf hausgemachte Spezialitäten und gemütliche Atmosphäre.</p>
+        <a href="speisekarte.html" class="btn btn-gold">Speisekarte ansehen</a>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- ===================================================
+         2. UNSERE BEREICHE
+    ==================================================== -->
+    <section class="section areas" id="bereiche">
+      <div class="container">
+        <p class="eyebrow center">Alles unter einem Dach</p>
+        <h2 class="section-title center">Unsere Bereiche</h2>
+
+        <div class="card-grid">
+          <article class="area-card" data-animate="fade-up">
+            <div class="area-icon">🍽️</div>
+            <h3>Restaurant</h3>
+            <p>Genießen Sie traditionelle Gerichte in gemütlicher Atmosphäre.</p>
+          </article>
+
+          <article class="area-card" data-animate="fade-up" data-delay="1">
+            <div class="area-icon">☕</div>
+            <h3>Café</h3>
+            <p>Kaffee, Tee und süße Spezialitäten für entspannte Momente.</p>
+          </article>
+
+          <article class="area-card" data-animate="fade-up" data-delay="2">
+            <div class="area-icon">🍹</div>
+            <h3>Bar</h3>
+            <p>Frisch servierte Getränke </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- ===================================================
+         3. SPEZIALITÄTEN
+    ==================================================== -->
+    <section class="section specialties" id="spezialitaeten">
+      <div class="container">
+        <p class="eyebrow center">Von unserer Küche</p>
+        <h2 class="section-title center">Spezialitäten</h2>
+
+        <div class="specialty-grid">
+
+          <article class="specialty-card" data-animate="fade-up">
+            <img src="images/Frühstück.jpeg" alt="Frühstück" loading="lazy">
+            <h3>Frühstück</h3>
+            <p>Der perfekte Start in den Tag – voller Frische, Vielfalt und echter Genussmomente</p>
+          </article>
+
+
+          <article class="specialty-card" data-animate="fade-up" data-delay="2">
+            <img src="images/Taboule.png" alt="Vorspeisen" loading="lazy">
+            <h3>Vorspeisen</h3>
+            <p>-Taboule- <br> Fein gehackte Petersilie mit herzhaftem Bulgur, verfeinert mit orientalischen Gewürzen und vielen weiteren frischen Zutaten</p>
+          </article>
+
+
+          <article class="specialty-card" data-animate="fade-up" data-delay="1">
+            <img src="images/Fatayer.jpg" alt="Fatayer" loading="lazy">
+            <h3>Fatayer</h3>
+            <p>-Za'atar- <br> Ofenfrischer Teigfladen, reichlich belegt mit aromatischem Za'atar und feinem Olivenöl</p>
+          </article>
+
+          <article class="specialty-card" data-animate="fade-up" data-delay="3">
+            <img src="images/Baklava.jpg" alt="Baklava" loading="lazy">
+            <h3>Nachspeisen</h3>
+            <p>-Baklava-<br>Hauchdünner Blätterteig mit Nüssen und honigsüßem Sirup.</p>
+          </article>
+
+          <article class="specialty-card" data-animate="fade-up" data-delay="4">
+            <img src="images/Kaffee.jpg" alt="Orientalischer Kaffee" loading="lazy">
+            <h3>Orientalische Getränke</h3>
+            <p>-Arabischer Kaffee-<br>Aromatisch aufgebrüht – der perfekte Abschluss jeder Mahlzeit.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- ===================================================
+         4. ÜBER UNS (Kurzversion – ausführlich auf ueber-uns.html)
+    ==================================================== -->
+    <section class="section about" id="ueber-uns">
+      <div class="container about-grid">
+        <div class="about-image" data-animate="fade-right">
+          <img src="images/Eingang.jpg" alt="Innenraum von Kultur bei Racha & Roger" loading="lazy">
+        </div>
+        <div class="about-text" data-animate="fade-left">
+          <p class="eyebrow">Unsere Geschichte</p>
+          <h2 class="section-title">Über uns</h2>
+          <p>Bei Kultur bei Racha &amp; Roger verbinden wir traditionelle orientalische Küche mit herzlicher Gastfreundschaft. Unser Ziel ist es, unseren Gästen ein besonderes Erlebnis mit gutem Essen und einer warmen Atmosphäre zu bieten.</p>
+          <a href="ueber-uns.html" class="btn btn-outline">Mehr erfahren</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- ===================================================
+         5. GALERIE (Vorschau – vollständige Galerie auf galerie.html)
+    ==================================================== -->
+    <section class="section gallery" id="galerie">
+      <div class="container">
+        <p class="eyebrow center">Einblicke</p>
+        <h2 class="section-title center">Galerie</h2>
+
+        <div class="gallery-grid">
+          <button class="gallery-item" data-caption="Restaurant">
+            <img src="https://placehold.co/600x600/3B2A20/F6EEE0?text=Restaurant" alt="Restaurant" loading="lazy">
+          </button>
+          <button class="gallery-item" data-caption="Innenbereich">
+            <img src="images/Schach.jpeg" loading="lazy">
+          </button>
+          <button class="gallery-item" data-caption="Hof1">
+            <img src="images/Hof1.jpeg" loading="lazy">
+          </button>
+          <button class="gallery-item" data-caption="Getränke">
+            <img src="https://placehold.co/600x600/3B2A20/F6EEE0?text=Getränke" alt="Getränke" loading="lazy">
+          </button>
+          <button class="gallery-item" data-caption="Billardraum">
+            <img src="images/Billard2.jpg" loading="lazy">
+          </button>
+          <button class="gallery-item" data-caption="Hof2">
+            <img src="images/Hof2.jpeg" alt="Atmosphäre" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <!-- ===================================================
+         6. ÖFFNUNGSZEITEN + 7. KONTAKT (kombiniert)
+    ==================================================== -->
+  <section class="section contact-hours" id="kontakt">
+  <div class="container">
+
+    <div class="contact-grid">
+      <div class="hours-card" data-animate="fade-up">
+        <h2 class="section-title">Öffnungszeiten</h2>
+        <table class="hours-table">
+          <tbody>
+            <tr><td>Montag</td><td>9:00 - 20:00 Uhr</td></tr>
+            <tr><td>Dienstag</td><td>9:00 - 20:00 Uhr</td></tr>
+            <tr><td>Mittwoch</td><td>9:00 - 20:00 Uhr</td></tr>
+            <tr><td>Donnerstag</td><td>9:00 - 20:00 Uhr</td></tr>
+            <tr><td>Freitag</td><td>9:00 - 22:00 Uhr</td></tr>
+            <tr><td>Samstag</td><td>9:00 - 22:00 Uhr</td></tr>
+            <tr><td>Sonntag</td><td>11:00 – 20:00 Uhr</td></tr>
+          </tbody>
+        </table>
+             </div>
+
+      <div class="contact-card" data-animate="fade-up" data-delay="1">
+        <h2 class="section-title">Kontakt</h2>
+        <ul class="contact-list">
+          <li><strong>Adresse:</strong><br>Straße der Einheit 24, 14806 Bad Belzig</li>
+          <li><strong>Telefon:</strong><br><a href="tel:+4933841474786">033841 474786</a></li>
+          <li><strong>E-Mail:</strong><br><a href="mailto:kultur.bei.rache.roger@gmail.com">kultur.bei.racha.roger@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Karte jetzt außerhalb des Grids, volle Breite -->
+    <div class="map-placeholder" data-animate="fade-up" data-delay="2" style="padding: 0; border: none; overflow: hidden; margin-top: 2.5rem;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.6270964447676!2d12.585673976694627!3d52.14110447196435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a899134e99ed77%3A0xe3d960c48f641f89!2sKultur%20bei%20Racha%20%26%20Roger!5e0!3m2!1sde!2sde!4v1787064706594!5m2!1sde!2sde"
+        width="100%"
+        height="380"
+        style="border:0; border-radius: var(--radius-sm); display: block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-logo">Kultur bei Racha &amp; Roger</h3>
+        <p>Orientalische Gastfreundschaft, hausgemachte Spezialitäten und gemütliche Atmosphäre – Restaurant, Café und Imbiss unter einem Dach.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Straße der Einheit 24<br>14806 Bad Belzig<br>033841 474786<br>kultur.bei.racha.roger@gmail.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Öffnungszeiten</h4>
+        <p>Mo-Do: 9:00–20:00<br>Fr–Sa: 9:00–22:00<br>So: 11:00–20:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <p>	<a href="impressum.html">Impressum</a><br>
+		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <div class="social-links">
+  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+	</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Kultur bei Racha &amp; Roger. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       LIGHTBOX (für Galerie-Bilder)
+  ==================================================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
