@@ -42,6 +42,9 @@
       border-radius: var(--radius);
       padding: 2.4rem 2rem;
       transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
     .event-card:hover {
       transform: translateY(-6px);
@@ -49,7 +52,7 @@
     }
     .event-card .icon { font-size: 2.2rem; margin-bottom: 1rem; }
     .event-card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
-    .event-card p { font-size: 0.9rem; opacity: 0.85; }
+    .event-card p { font-size: 0.9rem; opacity: 0.85; flex-grow: 1; }
     .event-card .event-tag {
       display: inline-block;
       margin-top: 0.9rem;
@@ -77,6 +80,41 @@
       max-width: 55ch;
       margin: 0 auto 2rem;
       opacity: 0.9;
+    }
+
+    /* ===================================================
+       RESPONSIVE DESIGN (Für Mobilgeräte & Tablets)
+    =================================================== */
+    @media (max-width: 992px) {
+      .events-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Tablets */
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .events-hero {
+        padding-top: 6rem;
+      }
+      .events-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+      }
+      .events-grid {
+        grid-template-columns: 1fr; /* 1 Spalte auf Smartphones */
+        gap: 1.2rem;
+      }
+      .event-card {
+        padding: 1.8rem 1.4rem;
+      }
+      .events-cta {
+        padding: 2rem 1.2rem;
+      }
+      .events-cta .btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
     }
   </style>
 </head>
@@ -191,9 +229,7 @@
 
   </main>
 
-  <!-- ===================================================
-       FOOTER
-  ==================================================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -213,16 +249,16 @@
 
       <div class="footer-col">
         <h4>Rechtliches</h4>
-        <p>	<a href="impressum.html">Impressum</a><br>
-		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+        <p><a href="impressum.html">Impressum</a><br>
+        <a href="datenschutz.html">Datenschutzerklärung</a></p>
       </div>
 
       <div class="footer-col">
         <h4>Social Media</h4>
         <div class="social-links">
-  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-	</div>
+          <a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100057039867158" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
     </div>
 
@@ -231,9 +267,7 @@
     </div>
   </footer>
 
-  <!-- ===================================================
-       LIGHTBOX (für Galerie-Bilder)
-  ==================================================== -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
     <img src="" alt="" id="lightboxImg">
@@ -243,5 +277,3 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-
-
