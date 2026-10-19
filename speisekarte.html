@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Speisekarte | Kultur bei Racha & Roger</title>
-  <meta name="description" content="Unsere Speisekarte: Frühstück, orientalische Vorspeisen, Wraps, Bowls, Tellergerichte und ausgewählte Getränke.">
+  <meta name="description" content="Unsere Speisekarte: Mittagstisch, Frühstück, orientalische Vorspeisen, Wraps, Bowls, Tellergerichte und ausgewählte Getränke.">
 
   <!-- Favicon & Fonts -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -30,7 +30,7 @@
     }
     .menu-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
     .menu-item {
@@ -73,6 +73,7 @@
       padding: 0.1rem 0.4rem;
       border-radius: 4px;
       margin-left: 0.4rem;
+      display: inline-block;
     }
     .badge-vegan { background: #e8f5e9; color: #2e7d32; }
     .badge-veg { background: #fff8e1; color: #f57f17; }
@@ -82,6 +83,83 @@
       color: var(--color-brown);
       margin-top: -1rem;
       margin-bottom: 1.5rem;
+    }
+
+    /* STYLES FÜR DEN MITTAGSTISCH-BANNER */
+    .lunch-banner {
+      background: linear-gradient(135deg, rgba(192, 160, 98, 0.12), rgba(27, 67, 50, 0.08));
+      border: 1px solid var(--color-gold);
+      border-radius: var(--radius);
+      padding: 2rem 1.8rem;
+      margin: 1.5rem auto 2.5rem;
+      text-align: center;
+      max-width: 800px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+    }
+    .lunch-banner .lunch-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .lunch-banner h2 {
+      font-family: var(--font-display);
+      color: var(--color-green-dark);
+      font-size: 1.7rem;
+      margin-bottom: 0.3rem;
+    }
+    .lunch-banner .lunch-time {
+      font-family: var(--font-ui);
+      font-weight: 700;
+      color: var(--color-gold-dark);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+    }
+    .lunch-banner .lunch-subtitle {
+      font-family: var(--font-elegant);
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--color-green);
+      margin-bottom: 0.6rem;
+    }
+    .lunch-banner p.lunch-text {
+      font-size: 0.95rem;
+      color: var(--color-brown);
+      max-width: 58ch;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* RESPONSIVE DESIGN (Handys & Tablets) */
+    @media (max-width: 768px) {
+      main {
+        padding-top: 4rem !important;
+      }
+      .lunch-banner {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0 2rem;
+      }
+      .lunch-banner h2 {
+        font-size: 1.4rem;
+      }
+      .lunch-banner .lunch-subtitle {
+        font-size: 1.15rem;
+      }
+      .menu-category-title {
+        font-size: 1.5rem;
+      }
+      .menu-grid {
+        grid-template-columns: 1fr; /* Einspaltig auf Mobilgeräten */
+        gap: 1rem;
+      }
+      .menu-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+      }
+      .menu-item-price {
+        align-self: flex-end;
+      }
     }
   </style>
 </head>
@@ -113,7 +191,7 @@
   <main style="padding-top: 5rem;">
 
     <!-- HEADER BEREICH -->
-    <section class="section center" style="padding-bottom: 2rem;">
+    <section class="section center" style="padding-bottom: 1rem;">
       <div class="container">
         <p class="eyebrow center">Frisch &amp; Hausgemacht</p>
         <h1 class="section-title">Unsere Speisekarte</h1>
@@ -121,87 +199,97 @@
       </div>
     </section>
 
+    <!-- MITTAGSTISCH BANNER -->
+    <div class="container">
+      <div class="lunch-banner">
+        <div class="lunch-icon">🍲</div>
+        <h2>Unser Mittagstisch</h2>
+        <div class="lunch-time">Montag bis Freitag von 11:00 bis 14:00 Uhr</div>
+        <div class="lunch-subtitle">„Gekocht als wär’s für die Familie – Arabischer Genuss des Tages“</div>
+        <p class="lunch-text">Jeden Tag ein neuer Geschmack aus der arabischen Küche – immer frisch, wechselnd und einzigartig zubereitet.</p>
+      </div>
+    </div>
+
     <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
 
     <!-- SPEISEN BEREICH -->
-<section class="menu-section">
-  <div class="container">
-    
-    <!-- FRÜHSTÜCK -->
-    <h2 class="menu-category-title">Frühstück</h2>
-    <p class="sub-note">Jeden Tag von 8:00 bis 10:30 Uhr</p>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Gekochte Eier <span class="menu-badge badge-veg">V</span></span>
-          <span class="menu-item-price">5,00 €</span>
+    <section class="menu-section">
+      <div class="container">
+        
+        <!-- FRÜHSTÜCK -->
+        <h2 class="menu-category-title">Frühstück</h2>
+        <p class="sub-note">Jeden Tag von 8:00 bis 10:30 Uhr</p>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Gekochte Eier <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">5,00 €</span>
+            </div>
+            <p class="menu-item-desc">Toast, Mayonnaise, frischer Salat</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Spiegeleier <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">6,00 €</span>
+            </div>
+            <p class="menu-item-desc">2 Eier, Toast, frischer Salat</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Sujuk-Spiegeleier</span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">2 Eier, Toast, Sujuk, frischer Salat</p>
+          </div>
         </div>
-        <p class="menu-item-desc">Toast, Mayonnaise, frischer Salat</p>
-      </div>
 
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Spiegeleier <span class="menu-badge badge-veg">V</span></span>
-          <span class="menu-item-price">6,00 €</span>
+        <!-- FATAYER -->
+        <h2 class="menu-category-title">Fatayer</h2>
+        <p class="sub-note">Belegte Teigfladen</p>
+
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Zaatar <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-price">4,80 €</span>
+            </div>
+            <p class="menu-item-desc">Thymian, Olivenöl, Sesam, Gewürze</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Extra Zaatar <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Zaatar, Mozzarella</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Käse <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Gemischter Käse, Petersilie, Gewürze</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Mhamara <span class="menu-badge badge-veg">V</span></span>
+              <span class="menu-item-price">5,50 €</span>
+            </div>
+            <p class="menu-item-desc">Paprikapaste, Mozzarella</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Salami mit Käse</span>
+              <span class="menu-item-price">5,80 €</span>
+            </div>
+            <p class="menu-item-desc">Rindersalami, Mozzarella</p>
+          </div>
         </div>
-        <p class="menu-item-desc">2 Eier, Toast, frischer Salat</p>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Sujuk-Spiegeleier</span>
-          <span class="menu-item-price">6,50 €</span>
-        </div>
-        <p class="menu-item-desc">2 Eier, Toast, Sujuk, frischer Salat</p>
-      </div>
-    </div>
-
-
-    <!-- FATAYER -->
-    <h2 class="menu-category-title">Fatayer</h2>
-    <p class="sub-note">Belegte Teigfladen</p>
-
-    <div class="menu-grid">
-      <div class="menu-item">
-        <div class="menu-item-header">
-	<span class="menu-item-title">Zaatar <span class="menu-badge badge-vegan">Vegan</span></span>
-        <span class="menu-item-price">4,80 €</span>
-        </div>
-        <p class="menu-item-desc">Thymian, Olivenöl, Sesam, Gewürze</p>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Extra Zaatar <span class="menu-badge badge-veg">V</span></span>
-          <span class="menu-item-price">5,50 €</span>
-        </div>
-        <p class="menu-item-desc">Zaatar, Mozzarella</p>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Käse <span class="menu-badge badge-veg">V</span></span>
-          <span class="menu-item-price">5,50 €</span>
-        </div>
-        <p class="menu-item-desc">Gemischter Käse, Petersilie, Gewürze</p>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Mhamara <span class="menu-badge badge-veg">V</span></span>
-          <span class="menu-item-price">5,50 €</span>
-        </div>
-        <p class="menu-item-desc">Paprikapaste, Mozzarella</p>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-item-header">
-          <span class="menu-item-title">Salami mit Käse</span>
-          <span class="menu-item-price">5,80 €</span>
-        </div>
-        <p class="menu-item-desc">Rindersalami, Mozzarella</p>
-      </div>
-    </div>
 
         <!-- VORSPEISEN -->
         <h2 class="menu-category-title">Vorspeisen</h2>
@@ -229,7 +317,7 @@
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-	      <span class="menu-item-title">Mutabal <span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-title">Mutabal <span class="menu-badge badge-vegan">Vegan</span></span>
               <span class="menu-item-price">5,50 €</span>
             </div>
             <p class="menu-item-desc">Gegrillte Auberginen, Sesamsoße</p>
@@ -243,14 +331,14 @@
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <span class="menu-item-title">Pommes frites<span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-title">Pommes frites <span class="menu-badge badge-vegan">Vegan</span></span>
               <span class="menu-item-price">4,50 €</span>
             </div>
             <p class="menu-item-desc">Klassisch gewürzt</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <span class="menu-item-title">Mhamara<span class="menu-badge badge-vegan">Vegan</span></span>
+              <span class="menu-item-title">Mhamara <span class="menu-badge badge-vegan">Vegan</span></span>
               <span class="menu-item-price">5,50 €</span>
             </div>
             <p class="menu-item-desc">Paprika, Bulgur, Walnüsse, Gewürze, Granatapfelsoße</p>
@@ -566,7 +654,7 @@
           </div>
         </div>
 
-<!-- BUBBLE TEA -->
+        <!-- BUBBLE TEA -->
         <h2 class="menu-category-title">Bubble Tea</h2>
         <p class="sub-note">Verschiedene tolle Sorten von Bubbles und Eistee (auch mit Milch oder Hafermilch verfügbar +0,50 €)</p>
         <div class="menu-grid">
@@ -589,9 +677,7 @@
 
   </main>
 
-  <!-- ===================================================
-       FOOTER
-  ==================================================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -611,16 +697,16 @@
 
       <div class="footer-col">
         <h4>Rechtliches</h4>
-        <p>	<a href="impressum.html">Impressum</a><br>
-		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+        <p><a href="impressum.html">Impressum</a><br>
+        <a href="datenschutz.html">Datenschutzerklärung</a></p>
       </div>
 
       <div class="footer-col">
         <h4>Social Media</h4>
         <div class="social-links">
-  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-	</div>
+          <a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100057039867158" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
     </div>
 
@@ -629,9 +715,7 @@
     </div>
   </footer>
 
-  <!-- ===================================================
-       LIGHTBOX (für Galerie-Bilder)
-  ==================================================== -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
     <img src="" alt="" id="lightboxImg">
@@ -641,4 +725,3 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-

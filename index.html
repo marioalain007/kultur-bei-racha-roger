@@ -6,13 +6,11 @@
 
   <!-- ===================================================
        SEO – Titel & Beschreibung
-       WICHTIG: Diese Texte erscheinen bei Google in der Suche.
-       Passe sie an, sobald du deine echten Infos hast.
   ==================================================== -->
   <title>Kultur bei Racha & Roger | Restaurant · Café · Bar</title>
   <meta name="description" content="Kultur bei Racha & Roger – orientalische Gastfreundschaft, hausgemachte Spezialitäten und gemütliche Atmosphäre. Restaurant, Café und Bar unter einem Dach.">
 
-  <!-- Open Graph (für schöne Vorschau bei WhatsApp/Facebook-Links) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Kultur bei Racha & Roger">
   <meta property="og:description" content="Orientalische Gastfreundschaft trifft auf hausgemachte Spezialitäten und gemütliche Atmosphäre.">
   <meta property="og:type" content="website">
@@ -22,7 +20,7 @@
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Google Fonts: Cinzel & Cormorant Garamond (Überschriften), Poppins & Lato (Text) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -34,8 +32,6 @@
 
   <!-- ===================================================
        NAVIGATION
-       Bleibt oben fest ("sticky") und wechselt beim Scrollen
-       von transparent zu dunkelgrün (siehe script.js)
   ==================================================== -->
   <header class="site-header" id="siteHeader">
     <div class="nav-inner">
@@ -65,8 +61,6 @@
          1. HERO BEREICH
     ==================================================== -->
     <section class="hero" id="hero">
-      <!-- PLATZHALTERBILD: Ersetze im CSS (.hero) den Bildpfad
-           durch dein eigenes Foto, z. B. images/hero.jpg -->
       <div class="hero-bg" style="background-image: url('images/racharoger.jpg');"></div>
       <div class="hero-overlay"></div>
 
@@ -108,11 +102,18 @@
           <article class="area-card" data-animate="fade-up" data-delay="2">
             <div class="area-icon">🍹</div>
             <h3>Bar</h3>
-            <p>Frisch servierte Getränke </p>
+            <p>Frisch servierte Getränke</p>
           </article>
         </div>
+
+<!-- BUTTON UNTER DEN BEREICHEN -->
+        <div style="text-align: center; margin-top: 2.5rem;" data-animate="fade-up">
+          <a href="veranstaltungen.html" class="btn btn-gold">Zu unseren Veranstaltungen</a>
+        </div>
+
       </div>
     </section>
+
 
     <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
 
@@ -126,12 +127,11 @@
 
         <div class="specialty-grid">
 
-          <article class="specialty-card" data-animate="fade-up">
+          <article class="specialty-card" data-animate="fade-up" data-delay="1">
             <img src="images/Frühstück.jpeg" alt="Frühstück" loading="lazy">
             <h3>Frühstück</h3>
             <p>Der perfekte Start in den Tag – voller Frische, Vielfalt und echter Genussmomente</p>
           </article>
-
 
           <article class="specialty-card" data-animate="fade-up" data-delay="2">
             <img src="images/Taboule.png" alt="Vorspeisen" loading="lazy">
@@ -140,19 +140,27 @@
           </article>
 
 
-          <article class="specialty-card" data-animate="fade-up" data-delay="1">
+  <!-- NEU: MITTAGSTISCH KARTE -->
+          <article class="specialty-card" data-animate="fade-up">
+            <img src="images/Mjadara.png" alt="Mjadara" loading="lazy">
+            <h3>Mittagstisch</h3>
+            <p>-Tagesgericht-<br>Gekocht als wär’s für die Familie: Täglich wechselnder arabischer Genuss des Tages (Mo–Fr 11:00–14:00 Uhr).</p>
+          </article>
+
+
+          <article class="specialty-card" data-animate="fade-up" data-delay="3">
             <img src="images/Fatayer.jpg" alt="Fatayer" loading="lazy">
             <h3>Fatayer</h3>
             <p>-Za'atar- <br> Ofenfrischer Teigfladen, reichlich belegt mit aromatischem Za'atar und feinem Olivenöl</p>
           </article>
 
-          <article class="specialty-card" data-animate="fade-up" data-delay="3">
+          <article class="specialty-card" data-animate="fade-up" data-delay="4">
             <img src="images/Baklava.jpg" alt="Baklava" loading="lazy">
             <h3>Nachspeisen</h3>
             <p>-Baklava-<br>Hauchdünner Blätterteig mit Nüssen und honigsüßem Sirup.</p>
           </article>
 
-          <article class="specialty-card" data-animate="fade-up" data-delay="4">
+          <article class="specialty-card" data-animate="fade-up" data-delay="5">
             <img src="images/Kaffee.jpg" alt="Orientalischer Kaffee" loading="lazy">
             <h3>Orientalische Getränke</h3>
             <p>-Arabischer Kaffee-<br>Aromatisch aufgebrüht – der perfekte Abschluss jeder Mahlzeit.</p>
@@ -165,7 +173,7 @@
     <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
 
     <!-- ===================================================
-         4. ÜBER UNS (Kurzversion – ausführlich auf ueber-uns.html)
+         4. ÜBER UNS
     ==================================================== -->
     <section class="section about" id="ueber-uns">
       <div class="container about-grid">
@@ -184,7 +192,7 @@
     <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
 
     <!-- ===================================================
-         5. GALERIE (Vorschau – vollständige Galerie auf galerie.html)
+         5. GALERIE
     ==================================================== -->
     <section class="section gallery" id="galerie">
       <div class="container">
@@ -196,16 +204,16 @@
             <img src="https://placehold.co/600x600/3B2A20/F6EEE0?text=Restaurant" alt="Restaurant" loading="lazy">
           </button>
           <button class="gallery-item" data-caption="Innenbereich">
-            <img src="images/Schach.jpeg" loading="lazy">
+            <img src="images/Schach.jpeg" alt="Schachspiel" loading="lazy">
           </button>
           <button class="gallery-item" data-caption="Hof1">
-            <img src="images/Hof1.jpeg" loading="lazy">
+            <img src="images/Hof1.jpeg" alt="Hofbereich" loading="lazy">
           </button>
           <button class="gallery-item" data-caption="Getränke">
             <img src="https://placehold.co/600x600/3B2A20/F6EEE0?text=Getränke" alt="Getränke" loading="lazy">
           </button>
           <button class="gallery-item" data-caption="Billardraum">
-            <img src="images/Billard2.jpg" loading="lazy">
+            <img src="images/Billard2.jpg" alt="Billardraum" loading="lazy">
           </button>
           <button class="gallery-item" data-caption="Hof2">
             <img src="images/Hof2.jpeg" alt="Atmosphäre" loading="lazy">
@@ -217,52 +225,51 @@
     <div class="ornament-divider" aria-hidden="true"><span></span><i></i><span></span></div>
 
     <!-- ===================================================
-         6. ÖFFNUNGSZEITEN + 7. KONTAKT (kombiniert)
+         6. ÖFFNUNGSZEITEN & KONTAKT
     ==================================================== -->
-  <section class="section contact-hours" id="kontakt">
-  <div class="container">
+    <section class="section contact-hours" id="kontakt">
+      <div class="container">
 
-    <div class="contact-grid">
-      <div class="hours-card" data-animate="fade-up">
-        <h2 class="section-title">Öffnungszeiten</h2>
-        <table class="hours-table">
-          <tbody>
-            <tr><td>Montag</td><td>9:00 - 20:00 Uhr</td></tr>
-            <tr><td>Dienstag</td><td>9:00 - 20:00 Uhr</td></tr>
-            <tr><td>Mittwoch</td><td>9:00 - 20:00 Uhr</td></tr>
-            <tr><td>Donnerstag</td><td>9:00 - 20:00 Uhr</td></tr>
-            <tr><td>Freitag</td><td>9:00 - 22:00 Uhr</td></tr>
-            <tr><td>Samstag</td><td>9:00 - 22:00 Uhr</td></tr>
-            <tr><td>Sonntag</td><td>11:00 – 20:00 Uhr</td></tr>
-          </tbody>
-        </table>
-             </div>
+        <div class="contact-grid">
+          <div class="hours-card" data-animate="fade-up">
+            <h2 class="section-title">Öffnungszeiten</h2>
+            <table class="hours-table">
+              <tbody>
+                <tr><td>Montag</td><td>9:00 - 20:00 Uhr</td></tr>
+                <tr><td>Dienstag</td><td>9:00 - 20:00 Uhr</td></tr>
+                <tr><td>Mittwoch</td><td>9:00 - 20:00 Uhr</td></tr>
+                <tr><td>Donnerstag</td><td>9:00 - 20:00 Uhr</td></tr>
+                <tr><td>Freitag</td><td>9:00 - 22:00 Uhr</td></tr>
+                <tr><td>Samstag</td><td>9:00 - 22:00 Uhr</td></tr>
+                <tr><td>Sonntag</td><td>11:00 – 20:00 Uhr</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-      <div class="contact-card" data-animate="fade-up" data-delay="1">
-        <h2 class="section-title">Kontakt</h2>
-        <ul class="contact-list">
-          <li><strong>Adresse:</strong><br>Straße der Einheit 24, 14806 Bad Belzig</li>
-          <li><strong>Telefon:</strong><br><a href="tel:+4933841474786">033841 474786</a></li>
-          <li><strong>E-Mail:</strong><br><a href="mailto:kultur.bei.rache.roger@gmail.com">kultur.bei.racha.roger@gmail.com</a></li>
-        </ul>
+          <div class="contact-card" data-animate="fade-up" data-delay="1">
+            <h2 class="section-title">Kontakt</h2>
+            <ul class="contact-list">
+              <li><strong>Adresse:</strong><br>Straße der Einheit 24, 14806 Bad Belzig</li>
+              <li><strong>Telefon:</strong><br><a href="tel:+4933841474786">033841 474786</a></li>
+              <li><strong>E-Mail:</strong><br><a href="mailto:kultur.bei.racha.roger@gmail.com">kultur.bei.racha.roger@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map-placeholder" data-animate="fade-up" data-delay="2" style="padding: 0; border: none; overflow: hidden; margin-top: 2.5rem;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.6270964447676!2d12.585673976694627!3d52.14110447196435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a899134e99ed77%3A0xe3d960c48f641f89!2sKultur%20bei%20Racha%20%26%20Roger!5e0!3m2!1sde!2sde!4v1787064706594!5m2!1sde!2sde"
+            width="100%"
+            height="380"
+            style="border:0; border-radius: var(--radius-sm); display: block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+
       </div>
-    </div>
-
-    <!-- Karte jetzt außerhalb des Grids, volle Breite -->
-    <div class="map-placeholder" data-animate="fade-up" data-delay="2" style="padding: 0; border: none; overflow: hidden; margin-top: 2.5rem;">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.6270964447676!2d12.585673976694627!3d52.14110447196435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a899134e99ed77%3A0xe3d960c48f641f89!2sKultur%20bei%20Racha%20%26%20Roger!5e0!3m2!1sde!2sde!4v1787064706594!5m2!1sde!2sde"
-        width="100%"
-        height="380"
-        style="border:0; border-radius: var(--radius-sm); display: block;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
-    </div>
-
-  </div>
-</section>
+    </section>
 
   </main>
 
@@ -288,16 +295,16 @@
 
       <div class="footer-col">
         <h4>Rechtliches</h4>
-        <p>	<a href="impressum.html">Impressum</a><br>
-		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+        <p><a href="impressum.html">Impressum</a><br>
+        <a href="datenschutz.html">Datenschutzerklärung</a></p>
       </div>
 
       <div class="footer-col">
         <h4>Social Media</h4>
         <div class="social-links">
-  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-	</div>
+          <a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100057039867158" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
     </div>
 
@@ -306,9 +313,7 @@
     </div>
   </footer>
 
-  <!-- ===================================================
-       LIGHTBOX (für Galerie-Bilder)
-  ==================================================== -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
     <img src="" alt="" id="lightboxImg">
