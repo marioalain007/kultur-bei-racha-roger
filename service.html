@@ -88,6 +88,41 @@
       margin-bottom: 0.4rem;
     }
     .catering-step p { font-size: 0.85rem; opacity: 0.85; }
+
+    /* ===================================================
+       RESPONSIVE DESIGN (Für Mobilgeräte & Tablets)
+    =================================================== */
+    @media (max-width: 992px) {
+      .service-grid,
+      .catering-steps {
+        grid-template-columns: repeat(2, 1fr); /* Auf Tablets 2 Spalten */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .service-hero {
+        padding-top: 6rem;
+      }
+      .service-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+      }
+      .service-grid,
+      .catering-steps {
+        grid-template-columns: 1fr; /* Auf Handys 1-spaltig untereinander */
+        gap: 1.2rem;
+      }
+      .catering-cta {
+        padding: 2rem 1.2rem;
+      }
+      .catering-cta .btn {
+        display: block;
+        width: 100%;
+        white-space: normal; /* Zeilenumbruch für lange Button-Texte */
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head>
 <body class="no-hero">
@@ -180,11 +215,11 @@
             </div>
           </div>
 
- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kultur.bei.racha.roger@gmail.com&su=Catering-Anfrage&body=Hallo%20Kultur%20bei%20Racha%20%26%20Roger%20Team%2C%0A%0Aich%20interessiere%20mich%20für%20Ihr%20Catering-Angebot.%0A%0ADatum%20der%20Veranstaltung:%20%0AAnzahl%20der%20Personen:%20%0AOrt:%20%0AWeitere%20Wünsche:%20%0A%0AVielen%20Dank%20und%20viele%20Grüße," 
-   target="_blank" 
-   class="btn btn-gold">
-  Catering-Anfrage per E-Mail senden
-</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kultur.bei.racha.roger@gmail.com&su=Catering-Anfrage&body=Hallo%20Kultur%20bei%20Racha%20%26%20Roger%20Team%2C%0A%0Aich%20interessiere%20mich%20für%20Ihr%20Catering-Angebot.%0A%0ADatum%20der%20Veranstaltung:%20%0AAnzahl%20der%20Personen:%20%0AOrt:%20%0AWeitere%20Wünsche:%20%0A%0AVielen%20Dank%20und%20viele%20Grüße," 
+             target="_blank" 
+             class="btn btn-gold">
+            Catering-Anfrage per E-Mail senden
+          </a>
 
         </div>
       </div>
@@ -192,9 +227,7 @@
 
   </main>
 
-  <!-- ===================================================
-       FOOTER
-  ==================================================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -214,16 +247,16 @@
 
       <div class="footer-col">
         <h4>Rechtliches</h4>
-        <p>	<a href="impressum.html">Impressum</a><br>
-		<a href="datenschutz.html">Datenschutzerklärung</a></p>
+        <p><a href="impressum.html">Impressum</a><br>
+        <a href="datenschutz.html">Datenschutzerklärung</a></p>
       </div>
 
       <div class="footer-col">
         <h4>Social Media</h4>
         <div class="social-links">
-  	<a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-  	<a href="https://www.facebook.com/EURE_FACEBOOK_SEITE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-	</div>
+          <a href="https://www.instagram.com/kultur_bei_racha_roger" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100057039867158" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
     </div>
 
@@ -232,9 +265,7 @@
     </div>
   </footer>
 
-  <!-- ===================================================
-       LIGHTBOX (für Galerie-Bilder)
-  ==================================================== -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
     <img src="" alt="" id="lightboxImg">
@@ -244,4 +275,3 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-
